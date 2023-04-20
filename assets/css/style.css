@@ -1,15 +1,71 @@
 * {
   margin: 0;
   padding: 0;
+  font-size: 16px;
+}
+
+:root {
+  --ff--body: "Roboto", sans-serif;
+}
+
+body {
+  font-family: var(--ff--body);
+  display: grid;
+
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr 3fr;
+
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 0.5em;
+  padding: 2em;
+  width: 50vw;
+  height: 40vw;
+  gap: 2em;
+}
+
+.search-zip {
+  display: grid;
+  gap: 0.5em;
+  width: 40%;
+  height: 25px;
+}
+
+#search-zipcode,
+#datepicker {
+  width: 50%;
+  height: 25px;
 }
 
 fieldset {
+  display: grid;
   border: 0;
+  gap: 1em;
+  font-size: 1.25em;
 }
+
 label {
-  display: block;
-  margin: 30px 0 0 0;
+  display: grid;
+  font-size: 1.5em;
 }
-.overflow {
+/* .overflow {
   height: 200px;
+} */
+
+#submit {
+  width: fit-content;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  font-size: 1.5em;
+}
+
+.search-zip h2,
+.date {
+  font-size: 1.5em;
 }

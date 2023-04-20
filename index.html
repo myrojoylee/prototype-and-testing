@@ -5,70 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prototype</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="demo">
+    <div class="wrapper">
+      <section class="search-zip">
+        <h2>Search by zipcode:</h2>
+        <input
+          type="text"
+          name="search-zipcode"
+          id="search-zipcode"
+          placeholder="18914"
+        />
+      </section>
+      <p class="date">
+        Date:<br /><input
+          type="text"
+          id="datepicker"
+          placeholder="Click and pick a date"
+        />
+      </p>
       <form action="#">
         <fieldset>
-          <label for="speed">Select a speed</label>
-          <select name="speed" id="speed">
-            <option>Slower</option>
-            <option>Slow</option>
-            <option selected="selected">Medium</option>
-            <option>Fast</option>
-            <option>Faster</option>
-          </select>
+          <article class="size">
+            <label for="size">Select your group size</label>
+            <select name="size" id="size">
+              <option>0-3 (small)</option>
+              <option selected="selected">4-7 (medium)</option>
+              <option>8+ (large)</option>
+            </select>
+          </article>
 
-          <label for="files">Select a file</label>
-          <select name="files" id="files">
-            <optgroup label="Scripts">
-              <option value="jquery">jQuery.js</option>
-              <option value="jqueryui">ui.jQuery.js</option>
-            </optgroup>
-            <optgroup label="Other files">
-              <option value="somefile">Some unknown file</option>
-              <option value="someotherfile">
-                Some other file with a very long option text
-              </option>
-            </optgroup>
-          </select>
-
-          <label for="number">Select a number</label>
-          <select name="number" id="number">
-            <option>1</option>
-            <option selected="selected">2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-            <option>7</option>
-            <option>8</option>
-            <option>9</option>
-            <option>10</option>
-            <option>11</option>
-            <option>12</option>
-            <option>13</option>
-            <option>14</option>
-            <option>15</option>
-            <option>16</option>
-            <option>17</option>
-            <option>18</option>
-            <option>19</option>
-          </select>
-
-          <label for="salutation">Select a title</label>
-          <select name="salutation" id="salutation">
-            <option disabled selected>Please pick one</option>
-            <option>Mr.</option>
-            <option>Mrs.</option>
-            <option>Dr.</option>
-            <option>Prof.</option>
-            <option>Other</option>
-          </select>
+          <article class="size">
+            <label for="salutation">Select a title</label>
+            <select name="salutation" id="salutation">
+              <option disabled selected>Please pick one</option>
+              <option>Mr.</option>
+              <option>Mrs.</option>
+              <option>Dr.</option>
+              <option>Prof.</option>
+              <option>Other</option>
+            </select>
+          </article>
         </fieldset>
       </form>
+      <button id="submit">Submit</button>
     </div>
-    <script src="./assets/js/script.js/"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
