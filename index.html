@@ -7,8 +7,10 @@
     <title>Prototype</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Graduate&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -19,47 +21,55 @@
   </head>
   <body>
     <div class="wrapper">
-      <section class="search-zip">
-        <h2>Search by zipcode:</h2>
-        <input
-          type="text"
-          name="search-zipcode"
-          id="search-zipcode"
-          placeholder="18914"
-        />
-      </section>
-      <p class="date">
-        Date:<br /><input
-          type="text"
-          id="datepicker"
-          placeholder="Click and pick a date"
-        />
-      </p>
-      <form action="#">
-        <fieldset>
-          <article class="size">
-            <label for="size">Select your group size</label>
-            <select name="size" id="size">
-              <option>0-3 (small)</option>
-              <option selected="selected">4-7 (medium)</option>
-              <option>8+ (large)</option>
-            </select>
-          </article>
+      <header><h1>COOLEST TITLE HERE</h1></header>
 
-          <article class="size">
-            <label for="salutation">Select a title</label>
-            <select name="salutation" id="salutation">
-              <option disabled selected>Please pick one</option>
-              <option>Mr.</option>
-              <option>Mrs.</option>
-              <option>Dr.</option>
-              <option>Prof.</option>
-              <option>Other</option>
-            </select>
-          </article>
-        </fieldset>
-      </form>
-      <button id="submit">Submit</button>
+      <main class="description">
+        <section class="about-us">
+          <h2 class="mission">About Us</h2>
+          <p class="detail">Even cooler description here</p>
+        </section>
+        <section class="search-zip">
+          <h3>Search by zipcode:</h3>
+          <input
+            type="text"
+            name="search-zipcode"
+            id="search-zipcode"
+            placeholder="18914"
+          />
+        </section>
+        <p class="date">
+          Date:<br /><input
+            type="text"
+            id="datepicker"
+            placeholder="Click and pick a date"
+          />
+        </p>
+        <form action="#">
+          <fieldset>
+            <article class="size">
+              <label for="size">Select your group size</label>
+              <select name="size" id="size">
+                <option>0-3 (small)</option>
+                <option selected="selected">4-7 (medium)</option>
+                <option>8+ (large)</option>
+              </select>
+            </article>
+
+            <!-- <article class="size">
+              <label for="salutation">Select a title</label>
+              <select name="salutation" id="salutation">
+                <option disabled selected>Please pick one</option>
+                <option>Mr.</option>
+                <option>Mrs.</option>
+                <option>Dr.</option>
+                <option>Prof.</option>
+                <option>Other</option>
+              </select>
+            </article> -->
+          </fieldset>
+        </form>
+        <button id="submit">Submit</button>
+      </main>
     </div>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
